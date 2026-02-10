@@ -1,7 +1,7 @@
 
 with source as (
 
-    select * from {{ source('tpch_now', 'orders') }}
+    select * from {{ source('tpch_sf001', 'orders') }}
 
 ),
 
@@ -14,7 +14,6 @@ rename as (
         o_orderstatus as status_code,
         o_totalprice as total_price,
         o_orderdate as order_date,
-        o_ordertime as order_time,
         o_orderpriority as priority_code,
         o_clerk as clerk_name,
         o_shippriority as ship_priority,
