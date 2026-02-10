@@ -1,0 +1,1 @@
+select * from analytics.dbt_lbk_fusion_mig.raw_orders
